@@ -1,10 +1,12 @@
-import './index.css'
 
-export function Nav(nome, telefone){
+
+export function Nav({nome, telefone}){
     return(
         <div className='nav'>
-            <strong>{nome}</strong>
-            <strong>{nome}</strong>
+        <div className='nav'>
+            <div className="nome"><strong>{nome}</strong></div>
+            <div className="tel"><strong>{telefone}</strong></div>
+        </div>
         </div>
     )
 }
